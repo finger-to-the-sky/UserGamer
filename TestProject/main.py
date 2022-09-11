@@ -1,17 +1,18 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 
-from app import crud, models, schemas
-from app.database import SessionLocal, engine
-from app.test import CreateTestUsers
+
+from TestProject.database import SessionLocal, engine
+from TestProject.test import CreateTestUsers
+from TestProject import models, schemas, crud
 
 models.Base.metadata.create_all(bind=engine)
 
 
-# testing = CreateTestUsers()
-# testing.create_user("Dead Pe", 33, "213@gmail.com")
-# testing.create_game("GTA")
-# testing.create_gamer("asdASD", 45, "123123@gmail.com", "RUST")
+testing = CreateTestUsers()
+testing.create_user("Dead Pe", 33, "213@gmail.com")
+testing.create_game("GTA")
+testing.create_gamer("asdASD", 45, "123123@gmail.com", "RUST")
 
 app = FastAPI()
 

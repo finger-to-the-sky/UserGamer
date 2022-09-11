@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
-from app.database import engine
-from app import models
+from TestProject.database import engine
+from TestProject import models
+
 
 class CreateTestUsers:
     """
