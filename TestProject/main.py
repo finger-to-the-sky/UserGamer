@@ -10,9 +10,9 @@ models.Base.metadata.create_all(bind=engine)
 
 
 testing = CreateTestUsers()
-testing.create_user("Dead Pe", 33, "213@gmail.com")
-testing.create_game("GTA")
-testing.create_gamer("asdASD", 45, "123123@gmail.com", "RUST")
+# testing.create_user("Dead Pe", 33, "213@gmail.com")
+# testing.create_game("GTA")
+# testing.create_gamer("asdASD", 45, "123123@gmail.com", "RUST")
 
 app = FastAPI()
 
