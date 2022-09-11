@@ -11,4 +11,4 @@
 
 # How to launch the application
 - After you clone the project in your development environment, you need to install the dependencies from requirements.txt with the | pip install -r requirements.txt
-- Then, while in TestProject, to run the application, the command | uvicorn TestProject.api:app --reload
+- Then, while in TestProject, to run the application, the command | uvicorn TestProject.main:app --reload
