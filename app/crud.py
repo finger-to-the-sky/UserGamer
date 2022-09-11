@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from TestProject import models
-from TestProject.database import engine
+from app import models
+from app.database import engine
 
 
 def get_games(db: Session):
