@@ -1,7 +1,7 @@
 from sqlalchemy import Table, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
-from TestProject.database import Base
+from TestProject.data.database import Base
 
 
 gaming_users = Table("gaming_users", Base.metadata,

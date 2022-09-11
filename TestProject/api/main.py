@@ -2,9 +2,10 @@ from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 
 
-from TestProject.database import SessionLocal, engine
-from TestProject.test import CreateTestUsers
-from TestProject import models, schemas, crud
+from TestProject.data.database import SessionLocal, engine
+from TestProject.test.test import CreateTestUsers
+from TestProject.data import models
+from TestProject.api import crud, schemas
 
 models.Base.metadata.create_all(bind=engine)
 
