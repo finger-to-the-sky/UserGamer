@@ -10,8 +10,8 @@
 - CreateTestUsers - test class for creating users and games.
 
 # How to run an application after cloning a repository
-- 1. Run docker-compose.yml with command | docker compose up
-And then, go to the address specified on the command line.
-- 2. You need to install the dependencies from requirements.txt with the | pip install -r requirements.txt
-- 2.1 Then, while in TestProject, to run the application, the command | uvicorn TestProject.api.main:app --reload
+- First method: Run docker-compose.yml with command | <b>docker compose up</b>
+- And then, go to the address specified on the command line.
+- Second method: You need to install the dependencies from requirements.txt with the | <b>pip install -r requirements.txt</b>
+- Then, while in TestProject, to run the application, the command | <b>uvicorn TestProject.api.main:app --reload</b>
 
