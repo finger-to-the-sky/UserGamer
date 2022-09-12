@@ -12,6 +12,6 @@
 # How to run an application after cloning a repository
 - First method: Run docker-compose.yml with command | <b>docker compose up</b>
 - And then, go to the address specified on the command line.
-- Second method: You need to install the dependencies from requirements.txt with the | <b>pip install -r requirements.txt</b>
+- Second method: You need to install the dependencies from requirements.txt with the command | <b>pip install -r requirements.txt</b>
 - Then, while in TestProject, to run the application, the command | <b>uvicorn TestProject.api.main:app --reload</b>
 
