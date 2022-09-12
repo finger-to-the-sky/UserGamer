@@ -9,7 +9,9 @@
 - User connection to the game. Creating an object User - Game.
 - CreateTestUsers - test class for creating users and games.
 
-# How to launch the application
-- After you clone the project in your development environment, you need to install the dependencies from requirements.txt with the | pip install -r requirements.txt
-- Then, while in TestProject, to run the application, the command | uvicorn TestProject.api.main:app --reload
+# How to run an application after cloning a repository
+- 1. Run docker-compose.yml with command | docker compose up
+And then, go to the address specified on the command line.
+- 2. You need to install the dependencies from requirements.txt with the | pip install -r requirements.txt
+- 2.1 Then, while in TestProject, to run the application, the command | uvicorn TestProject.api.main:app --reload
 
